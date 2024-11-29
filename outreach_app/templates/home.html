@@ -1,0 +1,24 @@
+<!-- outreach_app/templates/outreach_app/home.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to the Community Outreach System</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Community Outreach System</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'login' %}">Login</a></li>
+                <li><a href="{% url 'community_feedback' %}">Community Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Our goal is to connect students, faculty, and the community to engage in meaningful outreach activities.</h2>
+    </main>
+</body>
+</html>

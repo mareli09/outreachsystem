@@ -1,0 +1,23 @@
+{%load static%}
+<!-- outreach_app/templates/outreach_app/community_feedback.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Feedback</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Provide Your Feedback</h1>
+    </header>
+    <main>
+        <form method="POST">
+            {% csrf_token %}
+            <textarea name="feedback" placeholder="Share your thoughts"></textarea>
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </main>
+</body>
+</html>
